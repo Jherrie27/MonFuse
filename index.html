@@ -237,18 +237,18 @@ config = {
     _sdl2 : "canvas",
     user_canvas : 0,
     user_canvas_managed : 0,
-    ume_block : 1,
+    ume_block : 0,
     can_close : 0,
     archive : "monfuse",
-    gui_debug : 3,
+    gui_debug : 1,
     cdn : "https://pygame-web.github.io/archives/0.9/",
-    autorun : 0,
+    autorun : 1,
     PYBUILD : "3.12"
 }
 
 </script>
 
-    <title>monfuse</title>
+    <title>Monster Fusion Game</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -303,10 +303,10 @@ config = {
         }
 
         body {
-            font-family: arial;
+            font-family: 'Consolas', 'Courier New', monospace;
             margin: 0;
             padding: none;
-            background-color:powderblue;
+            background-color: #1a1a1f;
         }
 
         .topright{
@@ -339,6 +339,26 @@ config = {
            right:10px;
            border: 1px solid black;
         }
+        
+        /* Make terminal more visible */
+        #pyconsole {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60vh;
+            background: #0a0a0f;
+            border-top: 3px solid #00ff88;
+            z-index: 1000;
+        }
+        
+        #terminal {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
     </style>
 
     <script src="https://pygame-web.github.io/archives/0.9//browserfs.min.js"></script>
@@ -366,7 +386,7 @@ height="1px"
 
     <div id=crt  class=bottomright >
 
-        <div id="system" hidden>
+        <div id="system">
             <div class="button-container">
                 <button id="aiostop" disabled>AIO ⏏︎</button>
                 <button id="aiopaused_true" disabled>AIO ■</button>
@@ -386,7 +406,7 @@ height="1px"
 
         </div>
 
-        <div id=box class="emscripten_border" hidden=true>
+        <div id=box class="emscripten_border">
 
             <div id="info" class="trinfo"></div>
 
@@ -426,11 +446,12 @@ frameborder="1"
         // make your js customization here
         console.log(__FILE__, "custom_onload")
 
-        pyconsole.hidden = debug_hidden
-        system.hidden = debug_hidden
-        transfer.hidden = debug_hidden
-        info.hidden = debug_hidden
-        box.hidden =  debug_hidden
+        // FORCE TERMINAL TO BE VISIBLE
+        pyconsole.hidden = false
+        system.hidden = true
+        transfer.hidden = false
+        info.hidden = true
+        box.hidden = true
 
     }
 
