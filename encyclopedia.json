@@ -1,0 +1,136 @@
+{
+  "fire_cat": {
+    "name": "fire_cat",
+    "elements": [
+      "fire"
+    ],
+    "species": "cat",
+    "atk": 50,
+    "def": 40,
+    "spd": 60,
+    "skills": [],
+    "mutations": []
+  },
+  "fire_dog": {
+    "name": "fire_dog",
+    "elements": [
+      "fire"
+    ],
+    "species": "dog",
+    "atk": 60,
+    "def": 50,
+    "spd": 55,
+    "skills": [],
+    "mutations": []
+  },
+  "fire_rat": {
+    "name": "fire_rat",
+    "elements": [
+      "fire"
+    ],
+    "species": "rat",
+    "atk": 45,
+    "def": 35,
+    "spd": 70,
+    "skills": [],
+    "mutations": []
+  },
+  "water_cat": {
+    "name": "water_cat",
+    "elements": [
+      "water"
+    ],
+    "species": "cat",
+    "atk": 50,
+    "def": 40,
+    "spd": 60,
+    "skills": [],
+    "mutations": []
+  },
+  "water_dog": {
+    "name": "water_dog",
+    "elements": [
+      "water"
+    ],
+    "species": "dog",
+    "atk": 60,
+    "def": 50,
+    "spd": 55,
+    "skills": [],
+    "mutations": []
+  },
+  "water_rat": {
+    "name": "water_rat",
+    "elements": [
+      "water"
+    ],
+    "species": "rat",
+    "atk": 45,
+    "def": 35,
+    "spd": 70,
+    "skills": [],
+    "mutations": []
+  },
+  "grass_cat": {
+    "name": "grass_cat",
+    "elements": [
+      "grass"
+    ],
+    "species": "cat",
+    "atk": 50,
+    "def": 40,
+    "spd": 60,
+    "skills": [],
+    "mutations": []
+  },
+  "grass_dog": {
+    "name": "grass_dog",
+    "elements": [
+      "grass"
+    ],
+    "species": "dog",
+    "atk": 60,
+    "def": 50,
+    "spd": 55,
+    "skills": [],
+    "mutations": []
+  },
+  "grass_rat": {
+    "name": "grass_rat",
+    "elements": [
+      "grass"
+    ],
+    "species": "rat",
+    "atk": 45,
+    "def": 35,
+    "spd": 70,
+    "skills": [],
+    "mutations": []
+  },
+  "vapor_tigron": {
+    "name": "vapor_tigron",
+    "elements": [
+      "fire",
+      "water"
+    ],
+    "species": "tigron",
+    "atk": 90,
+    "def": 93,
+    "spd": 77,
+    "skills": [],
+    "mutations": []
+  },
+  "torrent_burrowfang": {
+    "name": "torrent_burrowfang",
+    "elements": [
+      "water",
+      "water"
+    ],
+    "species": "burrowfang",
+    "atk": 127,
+    "def": 35,
+    "spd": 150,
+    "skills": [],
+    "mutations": []
+  }
+}
