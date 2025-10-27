@@ -1,0 +1,7 @@
+{
+  "app_name": "Monster Fusion",
+  "version": "1.0",
+  "entrypoint": "main.py",
+  "archive": "monster_images",
+  "python_version": "3.11"
+}
